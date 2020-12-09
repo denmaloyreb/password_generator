@@ -22,19 +22,19 @@ function generatePass() {
     let resultArr = [];
     if (document.getElementById('letters').checked) {
         resultArr = resultArr.concat(letters);
-        console.log(resultArr);
+
     }
     if (document.getElementById('letters--caps').checked) {
         resultArr = resultArr.concat(lettersCaps);
-        //console.log(resultArr);
+
     }
     if (document.getElementById('numbers').checked) {
         resultArr = resultArr.concat(numbers);
-        //console.log(resultArr);
+
     }
     if (document.getElementById('special').checked) {
         resultArr = resultArr.concat(special);
-        console.log(resultArr);
+
     }
 
     resultArr.sort(() => Math.random() - 0.5);
@@ -43,15 +43,6 @@ function generatePass() {
     for (let i = 0; i < outWidth; i++) {
         password += resultArr[i];
     }
-    //console.log("generate");
-    result.innerHTML = password;
-}
 
-copyBtn.onclick = function() {
-    var ta = document.getElementById('result');
-    var range = document.createRange();
-    range.selectNode(ta);
-    window.getSelection().addRange(range);
-    //password.select();
-    document.execCommand("copy");
+    result.innerHTML = password;
 }
