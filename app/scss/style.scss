@@ -1,0 +1,41 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+@import "global";
+.header__inner {
+    text-align: center;
+}
+
+.generator__inner {
+    text-align: center;
+}
+
+.passwidth {
+    margin: 50px 5px 20px 5px;
+}
+
+.range {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.symbols {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    min-height: 200px;
+    align-items: baseline;
+    justify-content: space-between;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.generate {
+    margin-top: 20px;
+}
+
+.result {
+    margin-top: 15px;
+}
+
+@import "media";
